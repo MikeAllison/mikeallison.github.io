@@ -1,13 +1,13 @@
 {
-  "name": "foundation-sites-template",
+  "name": "portfolio",
   "version": "1.0.0",
   "authors": [
-    "ZURB <foundation@zurb.com>"
+    "Mike Allison"
   ],
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Personal portfolio site",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "http://foundation.zurb.com",
+  "homepage": "http://mallison.5apps.com",
   "dependencies": {
     "foundation-sites": "~6.1.2",
     "motion-ui": "~1.1.0",
