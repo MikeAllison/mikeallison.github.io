@@ -19,6 +19,15 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('copyjslibs', function() {
+   gulp.src([
+     'bower_components/jquery/dist/jquery.js',
+     'bower_components/what-input/what-input.js',
+     'bower_components/foundation-sites/dist/foundation.js'
+   ])
+   .pipe(gulp.dest('./js'));
+});
+
+gulp.task('default', ['sass', 'copyjslibs'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });

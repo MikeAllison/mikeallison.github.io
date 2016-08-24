@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass"
+    "build:sass": "gulp sass",
+    "build:copyjslibs": "gulp copyjslibs"
   },
   "repository": {
     "type": "git",
