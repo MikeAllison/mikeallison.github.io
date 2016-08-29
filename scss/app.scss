@@ -178,15 +178,14 @@
   }
 
   .project-image {
+    margin-top: 1rem;
+
     @media screen and (max-width: 1023px) {
       text-align: center;
     }
 
-    margin-top: 1rem;
-
     img {
-      width: 350px;
-      max-width: 350px;
+      max-width: 95%;
       border-radius: $global-radius;
     }
   }
