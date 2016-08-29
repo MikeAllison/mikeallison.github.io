@@ -181,10 +181,11 @@
     @media screen and (max-width: 1023px) {
       text-align: center;
     }
-    
+
     margin-top: 1rem;
 
     img {
+      -webkit-width: 350px;
       max-width: 350px;
       border-radius: $global-radius;
     }
