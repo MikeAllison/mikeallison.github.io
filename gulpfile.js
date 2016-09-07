@@ -40,8 +40,13 @@ gulp.task('html', function () {
     .pipe($.connect.reload());
 });
 
+gulp.task('js', function () {
+  gulp.src('./js/app.js')
+    .pipe($.connect.reload());
+});
+
 gulp.task('watch', function () {
-  gulp.watch(['./*.html'], ['html']);
+  gulp.watch(['./*.html', './js/app.js'], ['html', 'js']);
 });
 
 gulp.task('default', ['sass', 'copyjslibs', 'connect', 'watch'], function() {

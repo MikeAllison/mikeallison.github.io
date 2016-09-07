@@ -96,21 +96,25 @@
           <div class="small-12-columns">
             <h1 class="heading uppercase text-center">Personal Projects</h1>
             <hr class="hr-small">
-            <h5 class="text-center">Click on an item to be taken to the GitHub repo</h5>
+            <h5 class="text-center">Click on an item for more details</h5>
           </div>
       </div>
       <div class="row projects-images">
         <div class="small-12 large-4 large-offset-2 columns text-right project-image">
-          <a href="https://github.com/MikeAllison/postit" target="_blank">
-            <img src="img/post-it-1198px.png" alt="PostIt!" />
-          </a>
+          <img src="img/post-it-1198px.png" alt="PostIt!" data-open="projectsModal" data-project-name="postit" />
         </div>
         <div class="small-12 large-4 columns end project-image">
-          <a href="https://github.com/MikeAllison/craft-beer-finder" target="_blank">
-            <img src="img/craft-beer-finder-886px.png" alt="Craft Beer Finder" />
-          </a>
+          <img src="img/craft-beer-finder-886px.png" alt="Craft Beer Finder" data-open="projectsModal" data-project-name="craft beer finder" />
         </div>
-      </div>
+      </div> <!-- End projects-images -->
+      <div class="reveal large" id="projectsModal" data-reveal>
+        <h1 class="project-name">PostIt!</h1>
+        <p class="lead project-description">An app similar to Reddit</p>
+        <p><a href="#" class="project-website"></a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> <!-- End modal -->
     </div> <!-- End projects wrapper -->
 
     <div id="skills" class="row skills">
