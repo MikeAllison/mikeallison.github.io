@@ -28,6 +28,22 @@ gulp.task('copyjslibs', function() {
    .pipe(gulp.dest('./js'));
 });
 
-gulp.task('default', ['sass', 'copyjslibs'], function() {
+gulp.task('connect', function() {
+  $.connect.server({
+    root: './',
+    livereload: true
+  });
+});
+
+gulp.task('html', function () {
+  gulp.src('./*.html')
+    .pipe($.connect.reload());
+});
+
+gulp.task('watch', function () {
+  gulp.watch(['./*.html'], ['html']);
+});
+
+gulp.task('default', ['sass', 'copyjslibs', 'connect', 'watch'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });

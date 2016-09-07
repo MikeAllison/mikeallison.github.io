@@ -7,7 +7,7 @@
   "description": "Personal portfolio site",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "http://mallison.5apps.com",
+  "homepage": "http://mallison.me",
   "dependencies": {
     "foundation-sites": "~6.1.2",
     "motion-ui": "~1.1.0",
