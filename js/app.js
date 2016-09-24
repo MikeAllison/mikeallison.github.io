@@ -14,13 +14,22 @@ $(document).ready(function() {
   });
 
   $('.projects-images img').click(function() {
-    getProjectDetails($(this).data('projectName'));
+    setProjectDetails($(this).data('projectName'));
   });
 });
 
-var getProjectDetails = function(projectName) {
-  $.getJSON('./projects.json', function(data) {
+var setProjectDetails = function(projectName) {
+  $.getJSON('./data/projects.json', function(data) {
     var project = data.projects[projectName];
-    console.dir(project);
+
+    $('#projectsModal .project-name').text(project.name);
+    $('#projectsModal .project-short-description').text(project.shortDescription);
+    $('#projectsModal .project-github').text(project.github);
+    $('#projectsModal .project-github').attr('href', project.github);
+    $('#projectsModal .project-website').text(project.website);
+    $('#projectsModal .project-website').attr('href', project.website);
+    $.each(project.longDescription, function(index, value) {
+      $('#projectsModal .project-long-description').append("<p>" + value + "</p>");
+    });
   });
 };

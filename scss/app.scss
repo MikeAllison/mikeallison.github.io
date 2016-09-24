@@ -191,6 +191,12 @@
   }
 }
 
+.projects-modal {
+  .project-name {
+    color: $dark-blue;
+  }
+}
+
 .skills {
   margin-top: 2.5rem;
 
@@ -201,11 +207,9 @@
 
 .skills-progress {
   ul {
-
     progress {
       color: $orange; // Required for IE/Edge
     }
-
   }
 }
 
