@@ -21,7 +21,6 @@ gulp.task('sass', function() {
 gulp.task('copyjslibs', function() {
    gulp.src([
      'bower_components/jquery/dist/jquery.js',
-     'bower_components/what-input/what-input.js',
      'bower_components/foundation-sites/dist/foundation.js'
    ])
    .pipe(gulp.dest('./js'));
