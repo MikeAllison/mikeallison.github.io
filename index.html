@@ -107,16 +107,33 @@
           <img src="img/craft-beer-finder-886px.png" alt="Craft Beer Finder" data-open="projectsModal" data-project-name="craft beer finder" />
         </div>
       </div> <!-- End projects-images -->
+      <!-- Start projects modal -->
       <div class="reveal large projects-modal" id="projectsModal" data-reveal>
-        <h1 class="project-name"></h1>
-        <p class="lead project-short-description"></p>
-        <p>GitHub: <a href="#" class="project-github" target="_blank"></a></p>
-        <p>Website: <a href="#" class="project-website" target="_blank"></a></p>
-        <div class="project-long-description"></div>
+        <div class="row">
+          <div class="small-12 medium-3 columns">
+            <img src="#" alt="#" class="project-image" />
+          </div>
+          <div class="small-12 medium-9 columns">
+            <h1 class="project-name"></h1>
+            <p class="lead project-short-description"></p>
+            <p class="text-highlight">GitHub: <a href="#" class="project-github" target="_blank"></a></p>
+            <p class="text-highlight">Website: <a href="#" class="project-website" target="_blank"></a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <div class="project-long-description"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <p class="text-highlight">Key Technologies: <span class="project-key-technologies text-standard"></span></p>
+          </div>
+        </div>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div> <!-- End modal -->
+      </div> <!-- End projects modal -->
     </div> <!-- End projects wrapper -->
 
     <div id="skills" class="row skills">
@@ -124,9 +141,8 @@
         <h1 class="heading uppercase text-center">My Skills</h1>
         <hr class="hr-small">
         <p>
-          I’ve been building my front end development chops over the last three
-          years and would like to put them to the test in a role as a front end
-          developer.
+          I’ve been building my development chops over the last three
+          years and would like to put them to the test in a role as a developer.
         </p>
         <p>
           While I lack professional experience, I make up for it with a
@@ -136,32 +152,7 @@
       </div>
     </div>
     <div id="skills-progress" class="row skills-progress">
-      <div class="small-12 medium-10 medium-offset-1 columns">
-          <p>HTML5
-          <progress max="5" value="4" aria-valuetext="Proficient">Proficient</progress>
-          </p>
-          <p>CSS3
-          <progress max="5" value="4" aria-valuetext="Proficient">Proficient</progress>
-          </p>
-          <p>JavaScript
-          <progress max="5" value="3" aria-valuetext="Strong">Strong</progress>
-          </p>
-          <p>jQuery
-          <progress max="5" value="2" aria-valuetext="Intermediate">Intermediate</progress>
-          </p>
-          <p>Responsive Design
-          <progress max="5" value="3" aria-valuetext="Strong">Strong</progress>
-          </p>
-          <p>Git
-          <progress max="5" value="3" aria-valuetext="Strong">Strong</progress>
-          </p>
-          <p>Build Tools (Grunt/Gulp)
-          <progress max="5" value="2" aria-valuetext="Intermediate">Intermediate</progress>
-          </p>
-          <p>Responsive Frameworks (Foundation/Bootstrap)
-          <progress max="5" value="3" aria-valuetext="Strong">Strong</progress>
-          </p>
-      </div>
+      <div class="small-12 medium-10 medium-offset-1 columns"></div>
     </div>
 
     <div id="contact" class="row contact expanded">

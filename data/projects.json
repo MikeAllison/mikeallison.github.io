@@ -1,22 +1,39 @@
 {
 	"projects": {
 		"postit": {
+			"image": "./img/post-it-1198px.png",
+			"imageAlt": "PostIt!",
 			"name": "PostIt!",
 			"shortDescription": "A Rails app similar to Reddit",
       "github": "https://github.com/MikeAllison/postit",
-			"website": "https://postit-ma.herokuapp.com/",
+			"website": "https://postit-ma.herokuapp.com",
 			"longDescription": [
 				[
 					"This was the project for Launch School's “Rapid Prototyping with Ruby on Rails” course.  To challenge myself, I added additional features that weren’t required by, or taught in, the course.  These include a responsive design, a system for managing user accounts, and a flagging system.  The flagging system allows moderators to flag items with questionable content so they can be hidden from view while under review by administrators."
         ],[
-          "It has a Rails back-end with authentication built from scratch.  The front-end uses Bootstrap which I customized using SASS.  The site primarily uses AJAX to communicate with the controllers, and jQuery to update the DOM, but can fall back to standard HTTP requests if JavaScript is disabled in the browser.  Finally, the project has a full set of unit and integration tests written with the Minitest framework."
+          "It has a Rails back-end with authentication built from scratch.  The front-end uses Bootstrap which I customized using SASS.  The site primarily uses AJAX to communicate with the controllers, and jQuery to update the DOM, but can fall back to standard HTTP requests if JavaScript is disabled in the browser.  Finally, the project has a set of unit and integration tests written with the MiniTest framework."
+				],[
+					"Feel free to create your own account to test it out.  You can also log in as a moderator, or admin, with the usernames of GuestMod and GuestAdmin with the password: p0st1t"
 				]
-			]
+			],
+			"keyTechnologies": ["Ruby on Rails, jQuery, Bootstrap, CoffeeScript, HTML, SASS, AJAX, MiniTest"]
 		},
 		"craft beer finder": {
+			"image": "./img/craft-beer-finder-886px.png",
+			"imageAlt": "Craft Beer Finder",
 			"name": "Craft Beer Finder",
 			"shortDescription": "A JavaScript app using Google APIs to find craft beer",
-			"website": "https://craft-beer-finder.5apps.com/"
+			"github": "https://github.com/MikeAllison/craft-beer-finder",
+			"website": "https://craft-beer-finder.5apps.com",
+			"longDescription": [
+				[
+					"The first thing to notice is that although this app is set to find craft beer, I designed it in a way that you can tweak the config file to search for anything that the Google Places service might recognize.  You can also tweak the results returned to you in a variety of ways to make them more relevant.  The app uses some HTML5 technologies like browser-based geolocation, it saves your last 5 searches using localStorage, and search results are read/written using sessionStorage.  Bootstrap was used for the front-end framework and the design works well on both desktop and mobile.  Finally Grunt was used as a build tool to concat and minify JavaScript and CSS.  Jasmine was added for JavaScript testing."
+				],
+				[
+					"The first thing to notice is that although this app is set to find craft beer, you can tweak the config file to search for anything that the Google Places service might recognize.  You can also tweak the results returned to you in a variety of ways to make them more relevant.  The app uses some HTML5 technologies like browser-based geolocation, it saves your last 5 searches using localStorage, and search results are read/written using sessionStorage.  Bootstrap was used for the front-end framework and the design works well on both desktop and mobile.  Finally Grunt was used as a build tool to concat and minify JavaScript and CSS.  Jasmine was added for JavaScript testing."
+				]
+			],
+			"keyTechnologies": ["JavaScript, JavaScript Promises, HTML5 Geolocation, HTML5 localStorage, HTML5 sessionStorage, Bootstrap, Google Maps Javascript API, Google Maps Geolocation API, Google Maps Distance Matrix API, Grunt, Jasmine"]
 		}
 	}
 }
