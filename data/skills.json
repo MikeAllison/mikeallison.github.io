@@ -24,7 +24,7 @@
     "Responsive Frameworks (Bootstrap/Foundation)": {
       "level": "4"
     },
-    "Testing Frameworks (MiniTest/Capybara/Jasmine)": {
+    "Testing Frameworks (MiniTest/RSpec/Capybara/Jasmine)": {
       "level": "3"
     }
   }
