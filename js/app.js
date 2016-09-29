@@ -27,22 +27,12 @@ var populateSkills = function() {
       var fragment = document.createDocumentFragment();
 
       $.each(skills, function(key, value) {
-        var levelText;
+        var timeframe = value.years === '1' ? 'Year' : 'Years';
 
-        if (value.level === "1") {
-          levelText = "Beginner";
-        } else if (value.level === "2") {
-          levelText = "Intermediate";
-        } else if (value.level === "3") {
-          levelText = "Proficient";
-        } else if (value.level === "4") {
-          levelText = "Strong";
-        }
-
-        $('<p>' + key + '<progress max="5" value="" aria-valuetext=""/></p>')
+        $('<p>' + key + '<span class="pull-right show-for-medium"><small>' + value.years + ' ' + timeframe + '</small></span><progress max="5" value="" aria-valuetext=""/></p>')
           .find('progress')
-            .attr('value', value.level)
-            .attr('aria-valuetext', levelText)
+            .attr('value', value.years)
+            .attr('aria-valuetext', value.years + ' ' + timeframe)
           .end()
           .appendTo(fragment);
       });

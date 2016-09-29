@@ -1,31 +1,31 @@
 {
   "skills": {
     "HTML5": {
-      "level": "4"
+      "years": "3"
     },
     "CSS3": {
-      "level": "4"
+      "years": "3"
     },
     "JavaScript": {
-      "level": "3"
+      "years": "2"
     },
     "Ruby on Rails": {
-      "level": "3"
+      "years": "3"
     },
     "jQuery": {
-      "level": "2"
+      "years": "2"
     },
     "Git": {
-      "level": "3"
+      "years": "3"
     },
     "Build Tools": {
-      "level": "2"
+      "years": "1"
     },
     "Responsive Frameworks (Bootstrap/Foundation)": {
-      "level": "4"
+      "years": "3"
     },
     "Testing Frameworks (MiniTest/RSpec/Capybara/Jasmine)": {
-      "level": "3"
+      "years": "1"
     }
   }
 }
