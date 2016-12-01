@@ -1,7 +1,7 @@
 {
 	"projects": {
 		"postit": {
-			"image": "./img/post-it-1198px.png",
+			"image": "./img/post-it-sm.png",
 			"imageAlt": "PostIt!",
 			"name": "PostIt!",
 			"shortDescription": "A Rails app similar to Reddit",
@@ -19,7 +19,7 @@
 			"keyTechnologies": ["Ruby on Rails, jQuery, Bootstrap, CoffeeScript, HTML, SASS, AJAX, MiniTest"]
 		},
 		"craft beer locator": {
-			"image": "./img/craft-beer-locator-674px.png",
+			"image": "./img/craft-beer-locator-sm.png",
 			"imageAlt": "Craft Beer Locator",
 			"name": "Craft Beer Locator",
 			"shortDescription": "A JavaScript app using Google APIs to find craft beer",
