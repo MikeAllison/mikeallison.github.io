@@ -18,13 +18,13 @@
 			],
 			"keyTechnologies": ["Ruby on Rails, jQuery, Bootstrap, CoffeeScript, HTML, SASS, AJAX, MiniTest"]
 		},
-		"craft beer finder": {
-			"image": "./img/craft-beer-finder-886px.png",
-			"imageAlt": "Craft Beer Finder",
-			"name": "Craft Beer Finder",
+		"craft beer locator": {
+			"image": "./img/craft-beer-locator-674px.png",
+			"imageAlt": "Craft Beer Locator",
+			"name": "Craft Beer Locator",
 			"shortDescription": "A JavaScript app using Google APIs to find craft beer",
-			"github": "https://github.com/MikeAllison/craft-beer-finder",
-			"website": "https://craft-beer-finder.5apps.com",
+			"github": "https://github.com/MikeAllison/craft-beer-locator",
+			"website": "https://craft-beer-locator.5apps.com",
 			"longDescription": [
 				[
 					"I created this project for a couple of reasons.  First, I wanted to improve my JavaScript skills so I made the conscious decision to build this project using an MVC-style pattern without using a third-party JavaScript framework or library.  Second, I wanted experience working with APIs so I used three:  Google Maps Javascript API, Google Maps Geolocation API, and Google Maps Distance Matrix API.  JavaScript promises were utilized to communicate with these APIs due to their asynchronous nature."
