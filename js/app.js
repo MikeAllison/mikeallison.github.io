@@ -29,7 +29,11 @@ var populateSkills = function() {
       $.each(skills, function(key, value) {
         var timeframe = value.years === '1' ? 'Year' : 'Years';
 
-        $('<p>' + key + '<span class="pull-right show-for-medium"><small>' + value.years + ' ' + timeframe + '</small></span><progress max="5" value="" aria-valuetext=""/></p>')
+        $('<p>' + key +
+          '<span class="show-for-small-only"><small> - ' + value.years + ' ' + timeframe + '</small></span>' +
+          '<span class="pull-right show-for-medium"><small>' + value.years + ' ' + timeframe + '</small></span>' +
+          '<progress max="5" value="" aria-valuetext=""/>' +
+        '</p>')
           .find('progress')
             .attr('value', value.years)
             .attr('aria-valuetext', value.years + ' ' + timeframe)
